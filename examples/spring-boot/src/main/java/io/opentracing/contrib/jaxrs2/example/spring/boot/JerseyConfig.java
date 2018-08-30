@@ -27,5 +27,6 @@ public class JerseyConfig extends ResourceConfig {
                 .build());
 
         register(new TestHandler(tracer, client));
+        register(new ExampleHandler());
     }
 }
